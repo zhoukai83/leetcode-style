@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "permissions": ["contextMenus", "tabs", "storage"],
+  "content_scripts": [
+    {
+      "exclude_globs": [],
+      "include_globs": ["*"],
+      "js": ["style.user.js", "jquery.js"],
+      "css": ["style.css"],
+      "matches": ["https://leetcode-cn.com/*", "https://www.baidu.com/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "menu",
+    "default_popup": "popup.html"
+  },
+  "converted_from_user_script": true,
+  "description": "lc",
+  "name": "好好学习，天天向上",
+  "version": "1.0"
+}
