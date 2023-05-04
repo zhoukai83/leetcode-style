@@ -1,5 +1,5 @@
 # leetcode-style
-change leetcode-cn.com website style
+it is a chrome extension used to change leetcode-cn.com website style
 
 
 
